@@ -1,0 +1,162 @@
+.casco-service {
+  padding-top: 40px;
+  margin-bottom: 75px;
+}
+
+.casco-service__title {
+  font-size: 30px; 
+  color: #767676;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 80px;
+}
+
+.casco-service__explic {
+  .clearfix();
+  margin-bottom: 20px;
+}
+.casco-service__text {
+  font-size: 24px;
+  line-height: 28px;
+  color: #767676;
+  text-align: center;
+  width: 450px;
+  margin-right: 90px;
+  float: right;
+}
+
+.casco-service__items {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.casco-service__item {
+  font-size: 24px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #767676;
+  text-align: center;
+  width: 225px;
+  position: relative;
+  
+  
+  span {
+    display: block;
+    text-align: left;
+    font-size: 70px;
+    font-weight: normal;
+    margin-bottom: 90px;
+    color: #959595;
+  }
+  
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    left: 60px;
+    top: -15px;
+  }
+}
+
+.casco-service__item--view {
+  &::before {
+    background-image: url("../img/icon-service-view.png");
+    width: 117px;
+    height: 118px;
+  }
+}
+
+.casco-service__item--estimate {
+  &::before {
+    background-image: url("../img/icon-service-estimate.png");
+    width: 136px;
+    height: 120px;
+  }
+}
+
+.casco-service__item--spares {
+  &::before {
+    background-image: url("../img/icon-service-spares.png");
+    width: 114px;
+    height: 112px;
+    top: -7px;
+  }
+}
+
+.casco-service__item--repair {
+  width: 165px;
+  &::before {
+    background-image: url("../img/icon-service-repair.png");
+    width: 118px;
+    height: 74px;
+    top: 30px;
+  }
+} 
+
+.casco-service__item--happy {
+  width: 170px;
+  &::before {
+    background-image: url("../img/icon-service-happy.png");
+    width: 127px;
+    height: 95px;
+    top: 9px;
+  }
+}
+
+.casco-service__img {
+  height: 380px;
+  background-color: #f8f8f8;
+  margin-bottom: 145px;
+}
+
+.casco-service__img-inner {
+  background-image: url("../img/photo-queue.png");
+  background-repeat: no-repeat;
+  background-position:  70% top;
+  position: relative;
+  height: 380px;
+
+}
+
+.casco-service__manager {
+  position: absolute;
+  bottom: 0;
+  left: 350px;
+}
+
+.casco-service__logo {
+  text-align: center;
+  font-size: 17px;
+  color: #484848;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #d8d8d8;
+  position: absolute;
+  top: 40px;
+  left: 200px;
+
+  img {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 25px;
+  }
+}
+
+.casco-service__link {
+  display: block;
+  border: 1px solid #818181;
+  font-size: 15px;
+  color: #a9a9a9;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 25px;
+  width: 245px;
+  margin: 0 auto;
+  cursor: pointer;  
+}
+
+
