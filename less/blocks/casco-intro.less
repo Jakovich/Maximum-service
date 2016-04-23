@@ -1,0 +1,85 @@
+.casco-intro {
+  background-image: url("../img/bg-intro.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 147px;
+  padding-bottom: 75px;
+}
+
+.casco-intro__period {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 135px;
+  padding-right: 50px;
+}
+
+.casco-intro__counter {
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+  flex-basis: 480px;
+  
+  p{
+    margin-top: 0; 
+  }
+}
+
+.casco-intro__advantages-title {
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.casco-intro__advantages-container {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.casco-intro__advantage {
+  font-size: 17px;
+  line-height: normal;
+  color: #ffffff;
+  padding-top: 120px;
+  position: relative;
+  background-repeat: no-repeat;
+  flex-basis: 160px;
+  text-align: center;
+  
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    top: 0;
+  }
+  
+}
+
+ .casco-intro__advantage--reliable::before {
+  background-image: url("../img/icon-reliable-company.png");
+  width: 126px;
+  height: 107px;
+  left: 18px;
+ }
+
+.casco-intro__advantage--losses { 
+  flex-basis: 184px;
+  &::before {
+  background-image: url("../img/icon-away-losses.png");
+  width: 104px;
+  height: 107px;
+  left: 38px;
+  }
+}
+
+.casco-intro__advantage--sale::before {
+  background-image: url("../img/icon-assurance-sale.png");
+  width: 108px;
+  height: 108px;
+  left: 22px;
+}
+

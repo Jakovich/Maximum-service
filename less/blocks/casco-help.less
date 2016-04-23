@@ -1,0 +1,86 @@
+.casco-help {
+  border: 6px solid #e8e8e8;
+}
+
+.casco-help__title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 37px;
+  color: #767676;
+  margin-bottom: 90px;
+}
+
+.casco-help__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.casco-help__items {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+
+.casco-help__item {
+  font-size: 19px;
+  color: #c04748;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 96px;
+  margin-bottom: 75px;
+  flex-basis: 170px;
+  
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    left: 0;
+    top: -20px;
+    width: 86px;
+    height: 83px;
+  }
+}
+
+.casco-help__item--onroad {
+  &::before {
+    background-image: url("../img/icon-onroad-red.png");
+  }
+}
+
+.casco-help__item--evacuation {
+  &::before {
+    background-image: url("../img/icon-evacuation-red.png");
+  }
+}
+
+.casco-help__item--time {
+  &::before {
+    background-image: url("../img/icon-evacuation-red.png");
+  }
+}
+ 
+.casco-help__item--juridic {
+  &::before {
+    background-image: url("../img/icon-time-red.png");
+  }
+}
+
+.casco-help__item--quantity {
+  &::before {
+    background-image: url("../img/icon-quantity-red.png");
+  }
+}
+.casco-help__item--time {
+  &::before {
+    background-image: url("../img/icon-time-red.png");
+  }
+}
+
+.casco-help__form {
+  padding-bottom: 60px;
+  flex-basis: 50%;
+}
