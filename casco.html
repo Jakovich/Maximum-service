@@ -20,13 +20,13 @@
   </header>
   <section class="casco-intro">
     <div class="wrapper">
-      <div class="casco-intro__period">
-        <div class="casco-intro__counter">
+      <div class="insurance-period">
+        <div class="insurance-period__counter">
           <p>До конца вашего страхового полиса КАСКО </p>
           <p>осталось <span id="counter">14</span> дней</p>
         </div>
         <div class="casco-intro__form">
-          <form action="post" class="casco-form casco-form--intro">
+          <form action="post" class="insurance-form insurance-form--intro">
             <input type="text" name="name" placeholder="Ваше имя">
             <input type="text" name="phone" placeholder="Ваш телефон">
             <button type="submit">Заказать полис</button>
@@ -79,8 +79,18 @@
       <div class="casco-service__video">
         <div class="wrapper">
           <div class="casco-service__video-items">
-            <div class="casco-service__video-item"><video src=""></video></div>
-            <div class="casco-service__video-item"><video src=""></video></div>
+            <div class="casco-service__video-item">
+              <video src="" poster="img/video-template-gep.jpg"></video>
+              <div class="casco-service__video-explic">
+                ГЭП
+              </div>
+            </div>
+            <div class="casco-service__video-item">
+              <video src="" poster="img/video-template-franchise.jpg"></video>
+              <div class="casco-service__video-explic">
+                Франшиза
+              </div>
+            </div>
           </div>
           <div class="casco-service__link">Смотреть еще</div> 
         </div>
@@ -88,19 +98,19 @@
   </section>
   
   <div class="wrapper">
-    <section class="casco-help">
-        <h2 class="casco-help__title">Карта Максимум “Помощь на дороге”</h2>
-        <div class="casco-help__inner">
-          <div class="casco-help__items">
-            <div class="casco-help__item casco-help__item--onroad">Техпомощь на&nbsp;дороге</div>
-            <div class="casco-help__item casco-help__item--evacuation">Эвакуация автомобиля</div>
-            <div class="casco-help__item casco-help__item--time">Круглосуточная справка</div>
-            <div class="casco-help__item casco-help__item--juridic">Юридическая помощь</div>
-            <div class="casco-help__item casco-help__item--quantity">Неограниченное число водителей</div>
-            <div class="casco-help__item casco-help__item--time">Время прибытия 40-60 минут</div>
+    <section class="insurance-help">
+        <h2 class="insurance-help__title">Карта Максимум “Помощь на дороге”</h2>
+        <div class="insurance-help__inner">
+          <div class="insurance-help__items">
+            <div class="insurance-help__item insurance-help__item--onroad">Техпомощь на&nbsp;дороге</div>
+            <div class="insurance-help__item insurance-help__item--evacuation">Эвакуация автомобиля</div>
+            <div class="insurance-help__item insurance-help__item--time">Круглосуточная справка</div>
+            <div class="insurance-help__item insurance-help__item--juridic">Юридическая помощь</div>
+            <div class="insurance-help__item insurance-help__item--quantity">Неограниченное число водителей</div>
+            <div class="insurance-help__item insurance-help__item--time">Время прибытия 40-60 минут</div>
           </div>
-          <div class="casco-help__form">
-            <form action="post" class="casco-form casco-form--help">
+          <div class="insurance-help__form">
+            <form action="post" class="insurance-form insurance-form--help">
               <input type="text" name="name" placeholder="Ваше имя">
               <input type="text" name="phone" placeholder="Ваш телефон">
               <button type="submit">Заказать</button>
