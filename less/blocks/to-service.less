@@ -1,0 +1,175 @@
+.to-service {
+  background-color: #f8f8f8;
+  color: #6a6a6a;
+  padding: 10px 0;
+}
+
+.to-service__title {
+  font-size: 23px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.to-service__items {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 115px;
+  justify-content: space-between;
+  border-bottom: 1px #c6c6c6 solid;
+  padding-bottom: 30px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.to-service__item {
+  font-size: 18px;
+  line-height: 28px;
+  padding-left: 85px;
+  flex-basis: 210px;
+  position: relative;
+  margin-bottom: 45px;
+  
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+  }
+}
+
+.to-service__item--level {
+  
+  &::before {
+    background-image: url("../img/icon-level.png");
+    width: 67px;
+    height: 55px;
+  }
+}
+
+.to-service__item--clutch {
+  
+  &::before {
+    background-image: url("../img/icon-clutch.png");
+    width: 69px;
+    top: -5px;
+    height: 56px;
+  }
+}
+
+.to-service__item--battery {
+  
+  &::before {
+    background-image: url("../img/icon-battery.png");
+    top: -10px;
+    width: 65px;
+    height: 48px;
+  }
+}
+
+.to-service__item--belt {
+  
+  &::before {
+    background-image: url("../img/icon-belt.png");
+    width: 55px;
+    height: 66px;
+    top: -15px;
+  }
+}
+
+.to-service__item--light {
+  
+  &::before {
+    top: 3px;
+    background-image: url("../img/icon-light.png");
+    width: 67px;
+    height: 55px;
+  }
+}
+
+.to-service__item--brake {
+  
+  &::before {
+    background-image: url("../img/icon-brake.png");
+    width: 66px;
+    height: 58px;
+  }
+}
+
+.to-service__item--suspension {
+  
+  &::before {
+    top: -7px;
+    background-image: url("../img/icon-suspension.png");
+    width: 67px;
+    height: 64px;
+  }
+}
+
+.to-service__item--wheel {
+  
+  &::before {
+    top: -15px;
+    background-image: url("../img/icon-wheel.png");
+    width: 69px;
+    height: 65px;
+  }
+}
+
+.to-service__item--parking-brake {
+  
+  &::before {
+    top: -10px;
+    background-image: url("../img/icon-parking-brake.png");
+    width: 72px;
+    height: 40px;
+  }
+}
+
+
+.to-service__items--big {
+  
+  padding: 0 160px;
+  border: 0;
+  margin-top: 60px;
+  .to-service__item {
+    padding-left: 0;
+    padding-top: 120px;
+    text-align: center;
+    flex-basis: 235px;
+    &::before {
+      top: 0;     
+    }
+  }
+}
+
+
+.to-service__item--oil {
+  &::before {
+    background-image: url("../img/icon-oil.png");
+    width: 104px;
+    height: 101px;
+    left: 72px;
+  }
+}
+
+.to-service__item--eco-filter {
+  &::before {
+    background-image: url("../img/icon-eco-filter.png");
+    width: 96px;
+    height: 104px;
+    left: 60px;
+  }
+}
+
+.to-service__item--air-filter {
+  &::before {
+    background-image: url("../img/icon-air-filter.png");
+    width: 118px;
+    height: 116px;
+    left: 52px;
+  }
+} 
