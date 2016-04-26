@@ -2,26 +2,45 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Максимум КАСКО</title>
+  <title>Максимум ТО</title>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <section class="osago-intro">
+  <section class="to-intro">
     <div class="wrapper">
-      <div class="insurance-period">
-        <div class="insurance-period__counter">
-          <p>До конца вашего страхового полиса КАСКО </p>
-          <p>осталось <span id="counter">14</span> дней</p>
-        </div>
-        <div class="casco-intro__form">
-          <form action="post" class="insurance-form insurance-form--intro">
-            <input type="text" name="name" placeholder="Ваше имя">
-            <input type="text" name="phone" placeholder="Ваш телефон">
-            <button type="submit">Заказать полис</button>
-          </form>
-        </div>
+      <div class="to-intro__text">
+        <p>Последний раз вы были на ТО<br><span class="to-day">300</span> дней назад</p> 
+        <p>Проверьте, не проехали ли вы очередные 15 000 километров</p>
       </div>
+      <div class="to-intro__form">
+        <form action="post" class="insurance-form insurance-form--to">
+          <select name="mark" id="mark">
+            <option disabled selected>Модель</option>
+            <option value="Honda">Honda</option>
+            <option value="Ford">Ford</option>
+            <option value="Hyndai">Hyndai</option>
+            <option value="Mitsubishi">Mitsubishi</option>
+            <option value="Suzuki">Suzuki</option>
+          </select>
+          <input type="text" name="name" placeholder="Ваше имя">
+          <input type="text" name="phone" placeholder="Ваш телефон">
+          <button type="submit">Заказать полис</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <section class="to-frequency">
+   <div class="wrapper">
+     <p class="to-frequency__text">Рекомендованная производителем частота прохождения ТО</p>
+     <div class="to-counter">
+       <img src="img/to-counter.gif" width="322" height="322" alt="">
+     </div>
+     <p class="to-frequency__text">Максимальное отклонение от установленных интервалов ТО</p>
+     <p class="to-frequency__text to-frequency__text--uppercase">не должно превышать 1 000 километров<br>или 1 месяц эксплуатации</p> 
+     <p class="to-frequency__text to-frequency__text--small">(В зависимости от того, что наступит раньше)</p>
+     <p class="to-frequency__text to-frequency__text--reference">*Сроки регулярного ТО смотрите в руководстве по эксплуатаци автомобиля</p>
     </div>
   </section>
 
@@ -47,6 +66,31 @@
         <div class="to-service__item to-service__item--air-filter">Воздушный фильтр двигателя</div>
       </div>
     </div>
+  </section>
+  
+  <section class="to-test">
+    <div class="wrapper">
+      <h3 class="to-test__title">Диалоговая приемка</h3>
+      <div class="to-test__subtitle">
+        <p class="to-test__subtitle-text">Проверка автомобиля на линии диагностики совместно с мастером консультантом.</p>
+        <p class="to-test__subtitle-text to-test__subtitle-text--uppercase">Автомобиль изучается в трех положениях:</p>
+     </div> 
+      <div class="to-test__items">
+        <div class="to-test__item to-test__item--noup">Без подъема</div>
+        <div class="to-test__item to-test__item--middleup">В приподнятом состоянии</div>
+        <div class="to-test__item to-test__item--up">В поднятом состоянии</div>
+      </div>
+
+      <div class="to-test__ecplics">
+        <div class="to-test__ecplic-item">Вместе составим план ремонта автомобиля</div>
+        <div class="to-test__ecplic-item">Совместно снимем и расшифруем показатели оборудования линии диагностики</div>
+      </div>
+
+      <div class="to-test__ecplics">
+        <div class="to-test__ecplic-item">Подробно расскажем про состояние автомобиля</div>
+        <div class="to-test__ecplic-item">Ответим на любые вопросы</div>
+      </div>
+    </div>   
   </section>
   
 
