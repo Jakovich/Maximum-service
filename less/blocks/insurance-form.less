@@ -7,27 +7,38 @@
     display: block;
     margin-bottom: 10px;
     color: #a9a9a9;
+    &:hover {
+      box-shadow: 1px 2px 2px #eee;
+    }
+    &:focus {
+      border-color: #aaa;
+      box-shadow: 1px 2px 2px #eee;
+    }
   }
   
   select {
-  color: #a9a9a9;
-  border: 1px solid #dcdcdc;
-  outline: none;
-  -webkit-appearance: none;
-  padding: 10px 15px;
-  padding-right: 27px;
-  background-image: url("../img/icon-arrow-select.png");
-  background-repeat: no-repeat; 
-  background-position: 95% 20px;
-  -moz-appearance: none;
-  text-indent: 0.01px; 
-  text-overflow: '';
-  -ms-appearance: none;
-  appearance: none!important;
-  cursor: pointer;
-  outline: none;
-  margin-bottom: 10px;
-  width: 407px;
+    color: #a9a9a9;
+    border: 1px solid #dcdcdc;
+    outline: none;
+    -webkit-appearance: none;
+    padding: 10px 15px;
+    padding-right: 27px;
+    background-image: url("../img/icon-arrow-select.png");
+    background-repeat: no-repeat; 
+    background-position: 95% 20px;
+    -moz-appearance: none;
+    text-indent: 0.01px; 
+    text-overflow: '';
+    -ms-appearance: none;
+    appearance: none!important;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+    width: 407px;
+    &:hover {
+      box-shadow: 1px 2px 2px #eee;
+    }
+  
   }
   
   option {
@@ -53,6 +64,11 @@
     width: 245px;
     margin: 0 auto;
     cursor: pointer;
+    &:hover {
+      background-color: #9a9a9a;
+      color: #ffffff;
+      border-color: #9a9a9a;
+    }
   }
 }
 
@@ -74,3 +90,4 @@
     margin-top: 25px;
   }
 }
+

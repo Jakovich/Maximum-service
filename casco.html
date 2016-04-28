@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Максимум КАСКО</title>
-  <script charset="utf-8" src="https://clck.yandex.ru/jclck/dtype=stred/pid=443/cid=72717/path=2_0.599.355/rnd=0.5188716635065856/*https://maps.yandex.ru/"></script>
-  <script charset="utf-8" src="https://clck.yandex.ru/jclck/dtype=stred/pid=443/cid=72717/path=2_0.599.355/rnd=0.11531919257807288/*https://maps.yandex.ru/"></script>
+  
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <script src="/js/jquery-2.2.3.min.js" language="javascript"></script>
+  <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" language="javascript">
+</script>
+ 
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
       <div class="layout2" id="header">
         <div class="layout">
           <div id="logo">
-            <img title="Автосалон «Максимум» " src="http://максимум.рф/i/logo.png" class="logo">
+            <img title="Автосалон «Максимум» " src="img/logo.png" class="logo">
           </div>
           <div class="header-phone-address">
             <div onclick="Form.showModal()" class="header-phone-order"></div>					
@@ -219,45 +220,6 @@
   <div id="map1"></div>
   <div id="map2"></div>
   
-
-  <script>
-    Map.divId = 'map1';
-    Map.lat = 59.99;
-    Map.lng = 30.34;
-    Map.zoom = 11;
-    Map.points = {};
-    Map.points["point1"] = new Map.Point({
-    id: "point1",
-    lat: 59.992,
-    lng: 30.255,
-    zoom: 12,
-    html: '&lt;b&gt;Сервис Максимум&lt;/b&gt;&lt;br /&gt;СПб, Торфяная дорога, 8/3'
-    });
-
-    Map2.divId = 'map2';
-    Map2.lat = 59.99;
-    Map2.lng = 30.34;
-    Map2.zoom = 11;
-    Map2.points = {};
-    Map2.points["point2"] = new Map2.Point({
-    id: "point2",
-    lat: 60.02312048982813,
-    lng: 30.437426082031177,
-    zoom: 12,
-    html: '&lt;b&gt;Сервис Максимум&lt;/b&gt;&lt;br /&gt;Санкт-Петербург, ул. Руставели, д. 53'
-   });
-   $('.fancybox').fancybox({
-   openEffect	: 'none',
-    closeEffect	: 'none',
-   closeBtn		: true,
-   padding : 6,
-   helpers		:
-  {
-    title: { type : 'inside' },
-    overlay: { locked: false }
-  }
-   });
-  </script>
   </div>
   </div>
   </section> 
@@ -328,6 +290,6 @@
       </div>
     </div>
   </footer>
-
+ 
 </body>
 </html>
