@@ -116,7 +116,9 @@ module.exports = function(grunt) {
     "copy",
     "less",
     "postcss",
-    "csso"
+    "csso",
+    "imagemin"
+      
 
   ]);
 
