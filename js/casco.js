@@ -1,13 +1,21 @@
 
 $(document).ready(function() {
+  var isStop = true;
+  var restday = 20;
+  
   var clock;
     // Instantiate a counter
-  clock = new FlipClock($('.casco-counter'), 20, {
+  clock = new FlipClock($('.casco-counter'), restday, {
     clockFace: 'Counter',
     autoStart: true,
-    countdown: true
+    countdown: true,
+
   });
-    
+  
+  if(isStop) {
+    clock.stop(function() {
+  });
+  }
     
   $("#up-scroll").click(function() {
 

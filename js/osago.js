@@ -4,7 +4,7 @@ $(document).ready(function() {
   clock = new FlipClock($('.osago-counter'), 20, {
     clockFace: 'Counter',
     autoStart: true,
-    countdown: true
+    countdown: false
   });
     
     
