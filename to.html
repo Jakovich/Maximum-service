@@ -4,13 +4,11 @@
   <meta charset="UTF-8">
   <title>Максимум ТО</title>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
   <link rel="stylesheet" href="css/style.min.css">
   
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script type="text/javascript" src="js/jquery.pagepiling.js"></script>
 </head>
 <body>
   <header class="main-header">
@@ -76,9 +74,8 @@
       </div>
     </div>
   </header>
-  <div id="pinContainer">
-    <div id="slideContainer">
-      <section class="panel to-intro">
+  <div id="pagepiling">
+      <section class="section to-intro">
         <div class="wrapper">
           <div class="to-intro__text">
             <p>Последний раз вы были на ТО<br><span class="to-day">300</span> дней назад</p> 
@@ -109,7 +106,7 @@
         </div>
       </section>
 
-      <section class="panel to-frequency">
+      <section class="section to-frequency">
        <div class="wrapper">
          <p class="to-frequency__text">Рекомендованная производителем частота прохождения ТО</p>
          <div class="to-counter">
@@ -122,7 +119,7 @@
         </div>
       </section>
 
-      <section class="panel to-service">
+      <section class="section to-service">
     <div class="wrapper">
         
       <h2 class="to-service__title">Проверим:</h2>
@@ -145,7 +142,6 @@
       </div>
     </div>
   </section>
-    </div>
   </div>
   <section class="to-test">
     <div class="wrapper">
@@ -338,7 +334,17 @@
       </div>
     </div>
   </footer>
-
-  <script src="js/to.js"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			* Plugin intialization
+			*/
+	    	$('#pagepiling').pagepiling({
+	          	direction: 'horizontal',
+	    		
+			});
+	    });
+    </script>
+ 
 </body>
 </html>
