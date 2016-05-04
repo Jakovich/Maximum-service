@@ -5,8 +5,8 @@
   <title>Максимум КАСКО</title>
   
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
- 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -88,8 +88,8 @@
     <div class="wrapper">
       <div class="insurance-period">
         <div class="insurance-period__counter">
-          <p>До конца вашего страхового полиса КАСКО </p>
-          <p>осталось <span id="counter">14</span> дней</p>
+          <div class="insurance-period__text">До конца вашего страхового полиса КАСКО<br></div>
+          <div class="insurance-period__counter-wrap">осталось <div class="casco-counter"></div> дней</div>
         </div>
         <div class="casco-intro__form">
           <form action="post" class="insurance-form insurance-form--intro">
@@ -183,7 +183,6 @@
             </form>
           </div>
         </div>
-      </div>
     </section>
   </div>
   
@@ -291,6 +290,9 @@
       </div>
     </div>
   </footer>
-
+  
+  <script src="js/flipclock.min.js"></script>
+  <script src="js/casco.js">
+  </script>
 </body>
 </html>
