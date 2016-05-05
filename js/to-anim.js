@@ -1,5 +1,5 @@
 $(function () {
-  $(".to-test__diagram").css("background-position", "0 0");
+  $(".to-test__diagram").css("background-position", "0px 0px");
   var opacityElem = new TimelineMax();
     opacityElem       
       .to("#firstShow", 1, {opacity:1})
@@ -15,11 +15,6 @@ $(function () {
       .to(".to-test__diagram-text", 1, {opacity: 1},'-=1')
       .to(".to-test__diagram", 0, {backgroundPosition: "-325px -650px"},'-=1')
       .to(".to-test__diagram", 0, {backgroundPosition: "-650px -650px"},'=0.2');
-      
-  
-  
-  
-
   var controller = new ScrollMagic.Controller();
   var scene = new ScrollMagic.Scene({
     triggerElement: ".to-test",

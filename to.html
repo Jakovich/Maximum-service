@@ -11,6 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script src="js/vendor/covervid.mid.js"></script>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -80,6 +81,13 @@
   <div id="pinContainer">
     <div id="slideContainer">
       <section class="panel to-intro">
+        
+          <video class="masthead-video" autoplay loop poster="img/bg-intro-to1.jpg">
+            <source src="video/service-video.webm" type="video/webm">
+            <source src="video/service-video.mp4" type="video/mp4">
+          </video>
+		
+		<div class="masthead-overlay"></div>
         <div class="wrapper">
           <div class="to-intro__text">
             <p>Последний раз вы были на ТО<br><span class="to-day">300</span> дней назад</p> 
@@ -100,6 +108,7 @@
               <button type="submit">Заказать</button>
             </form>
           </div>
+          <div class="to-intro__marks">
           <div class="to-marks">
               <div  class="to-marks__item to-marks__item--honda"  title="Honda"> </div>
               <div class="to-marks__item to-marks__item--ford" title="Ford"></div>
@@ -107,6 +116,7 @@
              <div class="to-marks__item to-marks__item--huyndai"  title="Huyndai"></div>
               <div title="Suzuki" class="to-marks__item to-marks__item--suzuki"></div>
             </div>
+          </div>
         </div>
       </section>
 
@@ -169,7 +179,7 @@
       </div>
      
       
-        <div class="to-test__diagram" style="background-position: 0 0"><div class="to-test__diagram-text">15 минут</div></div>
+        <div class="to-test__diagram"><div class="to-test__diagram-text">15 минут</div></div>
 
       <div class="to-test__ecplics__items">
         <div class="to-test__ecplic-item" id="firstShow">Подробно расскажем про&nbsp;состояние автомобиля</div>

@@ -1,15 +1,23 @@
 .to-intro {
-  background-image: url("../img/bg-intro-to1.jpg");
   background-position: center top;
   background-repeat: no-repeat;
-  padding: 70px 0;
+  padding: 0;
   text-align: center;
+  position: relative;
+  video{
+    width: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+  }
 }
 
 .to-intro__text {
   font-size: 37px;
   color: #ffffff;
   margin-bottom: 50px;
+  position: absolute;
+  margin: 0 auto;
   p {
     margin: 0;
   }
@@ -19,5 +27,22 @@
 }
 
 .to-intro__form {
+  position: absolute;
   display: inline-block;
+}
+
+.masthead-overlay {
+	background-color: #000;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	opacity: 0.5;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+.to-intro__marks {
+  position: absolute;
 }
