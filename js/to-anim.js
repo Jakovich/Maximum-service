@@ -23,7 +23,8 @@ $(function () {
   var controller = new ScrollMagic.Controller();
   var scene = new ScrollMagic.Scene({
     triggerElement: ".to-test",
-    offset: 500
+    offset: 500,
+    reverse: false
   })
   .setTween(opacityElem) // trigger a TweenMax.to tween
   .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
