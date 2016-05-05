@@ -2,7 +2,7 @@
 
 module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt);
-  
+  grunt.loadNpmTasks('grunt-spritesmith');
   
   grunt.initConfig({
     less: {
@@ -119,6 +119,15 @@ module.exports = function(grunt) {
           expand: true,
           src: ["build/img/**/*.{png,jpg,gif}"]
         }]
+      }
+    },
+    
+    sprite:{
+      diagram: {
+        src: "img/diagram/*.png",
+        dest: "img/sprite-diagram.png",
+        destCss: "less/sprites/sprite-diagram.less",
+        padding: 2
       }
     }
 
