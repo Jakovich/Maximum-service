@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <title>Максимум ТО</title>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.min.css">
+  
   
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="main-header">
@@ -110,41 +111,42 @@
       </section>
 
       <section class="panel to-frequency">
-       <div class="wrapper">
-         <p class="to-frequency__text">Рекомендованная производителем частота прохождения ТО</p>
-         <div class="to-counter">
-           <img src="img/to-counter.gif" width="322" height="322" alt="">
-         </div>
-         <p class="to-frequency__text">Максимальное отклонение от установленных интервалов ТО</p>
-         <p class="to-frequency__text to-frequency__text--uppercase">не должно превышать 1 000 километров<br>или 1 месяц эксплуатации</p> 
-         <p class="to-frequency__text to-frequency__text--small">(В зависимости от того, что наступит раньше)</p>
-         <p class="to-frequency__text to-frequency__text--reference">*Сроки регулярного ТО смотрите в руководстве по эксплуатаци автомобиля</p>
+        <div class="wrapper">
+          <div class="to-frequency__inner">
+           <p class="to-frequency__text">Рекомендованная производителем частота прохождения ТО</p>
+           <div class="to-counter">
+             <img src="img/to-counter.gif" width="322" height="322" alt="">
+           </div>
+           <p class="to-frequency__text">Максимальное отклонение от установленных интервалов ТО</p>
+           <p class="to-frequency__text to-frequency__text--uppercase">не должно превышать 1 000 километров<br>или 1 месяц эксплуатации</p> 
+           <p class="to-frequency__text to-frequency__text--small">(В зависимости от того, что наступит раньше)</p>
+           <p class="to-frequency__text to-frequency__text--reference">*Сроки регулярного ТО смотрите в руководстве по эксплуатаци автомобиля</p>
+          </div>
         </div>
       </section>
 
       <section class="panel to-service">
-    <div class="wrapper">
-        
-      <h2 class="to-service__title">Проверим:</h2>
-      <div class="to-service__items">
-        <div class="to-service__item to-service__item--level">Уровни рабочих жидкостей </div>
-        <div class="to-service__item to-service__item--clutch">Работу сцепления </div>
-        <div class="to-service__item to-service__item--battery">Батарею аккумулятора</div>
-        <div class="to-service__item to-service__item--belt">Ремни безопасности</div>
-        <div class="to-service__item to-service__item--light">Внутреннее и наружное освещение</div>
-        <div class="to-service__item to-service__item--brake">Тормозные диски и&nbsp;колодки</div>
-        <div class="to-service__item to-service__item--suspension">Переднюю и заднюю подвеску</div>
-        <div class="to-service__item to-service__item--wheel">Рулевое управление</div>
-        <div class="to-service__item to-service__item--parking-brake">Стояночный тормоз</div>
-      </div>
-      <h2 class="to-service__title">Заменим:</h2>
-      <div class="to-service__items to-service__items--big">
-        <div class="to-service__item to-service__item--oil">Масло и масляный фильтр </div>
-        <div class="to-service__item to-service__item--eco-filter">Экологический фильтр салона</div>
-        <div class="to-service__item to-service__item--air-filter">Воздушный фильтр двигателя</div>
-      </div>
-    </div>
-  </section>
+        <div class="wrapper"> 
+          <h2 class="to-service__title">Проверим:</h2>
+            <div class="to-service__items">
+              <div class="to-service__item to-service__item--level">Уровни рабочих жидкостей </div>
+              <div class="to-service__item to-service__item--clutch">Работу сцепления </div>
+              <div class="to-service__item to-service__item--battery">Батарею аккумулятора</div>
+              <div class="to-service__item to-service__item--belt">Ремни безопасности</div>
+              <div class="to-service__item to-service__item--light">Внутреннее и наружное освещение</div>
+              <div class="to-service__item to-service__item--brake">Тормозные диски и&nbsp;колодки</div>
+              <div class="to-service__item to-service__item--suspension">Переднюю и заднюю подвеску</div>
+              <div class="to-service__item to-service__item--wheel">Рулевое управление</div>
+              <div class="to-service__item to-service__item--parking-brake">Стояночный тормоз</div>
+            </div>
+            <h2 class="to-service__title">Заменим:</h2>
+            <div class="to-service__items to-service__items--big">
+              <div class="to-service__item to-service__item--oil">Масло и масляный фильтр </div>
+              <div class="to-service__item to-service__item--eco-filter">Экологический фильтр салона</div>
+              <div class="to-service__item to-service__item--air-filter">Воздушный фильтр двигателя</div>
+            </div>
+          </div>
+      </section>
     </div>
   </div>
   <section class="to-test">
