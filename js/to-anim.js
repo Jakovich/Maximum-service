@@ -1,7 +1,8 @@
+
 $(function () {
-  $(".to-test__diagram").css("background-position", "0px 0px");
   var opacityElem = new TimelineMax();
-    opacityElem       
+    opacityElem
+      .to(".to-test__diagram", 0, {backgroundPosition: "0 0"}, '-=0.5')
       .to("#firstShow", 1, {opacity:1})
       .to(".to-test__diagram", 0, {backgroundPosition: "-325px 0"}, '-=1')
       .to(".to-test__diagram", 0, {backgroundPosition: "0 -325px"},'-=0.2')
@@ -18,7 +19,7 @@ $(function () {
   var controller = new ScrollMagic.Controller();
   var scene = new ScrollMagic.Scene({
     triggerElement: ".to-test",
-    offset: 500,
+    offset: 350,
     reverse: false
   })
   .setTween(opacityElem) // trigger a TweenMax.to tween

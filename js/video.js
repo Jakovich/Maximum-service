@@ -4,10 +4,9 @@
     $('.masthead-video').coverVid(1280, 720);
     fullscreen();
     $(window).resize(fullscreen);
-    //$(window).scroll(headerParallax);
 
     function fullscreen() {
-        var masthead = $('.to-test');
+        var masthead = $('.to-intro');
         var windowH = $(window).height();
         var windowW = $(window).width();
 
