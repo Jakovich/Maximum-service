@@ -1,7 +1,8 @@
 'use strict';
 
 (function ($) {
-    $('.masthead-video').coverVid(1280, 720);
+  $(".player").mb_YTPlayer();
+  
     fullscreen();
     $(window).resize(fullscreen);
 

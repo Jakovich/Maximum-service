@@ -11,7 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-  <script src="js/vendor/covervid.mid.js"></script>
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -83,10 +83,7 @@
     <div id="slideContainer">
       <section class="panel to-intro">
         
-          <video class="masthead-video" autoplay loop poster="img/bg-intro-to1.jpg">
-            <source src="video/service-video.webm" type="video/webm">
-            <source src="video/service-video.mp4" type="video/mp4">
-          </video>
+      <a id="bgndVideo" class="player" data-property="{videoURL:'https://youtu.be/URn9Ewdas00',containment:'.to-intro', autoPlay:true, mute:true, startAt:0, opacity:1, showControls:false, addRaster:true}"></a>
 		
 		<div class="masthead-overlay"></div>
         <div class="wrapper">
