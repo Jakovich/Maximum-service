@@ -14,7 +14,7 @@ $(function () {
       .to(".to-test__diagram", 0, {backgroundPosition: "0 -650px"},'=0.2')
       .to("#forthShow", 1, {opacity: 1},'=1')
       .to(".to-test__diagram-text", 1, {opacity: 1},'-=1')
-      .to(".to-test__diagram", 0, {backgroundPosition: "-325px -650px"},'-=1')
+      .to(".to-test__diagram", 0, {backgroundPosition: "-325px -650px"},'-=2')
       .to(".to-test__diagram", 0, {backgroundPosition: "-650px -650px"},'=0.2');
   var controller = new ScrollMagic.Controller();
   var scene = new ScrollMagic.Scene({
