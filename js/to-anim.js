@@ -23,6 +23,6 @@ $(function () {
     reverse: false
   })
   .setTween(opacityElem) // trigger a TweenMax.to tween
-  .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+  /*.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)*/
   .addTo(controller);
   });
