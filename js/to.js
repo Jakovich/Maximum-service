@@ -13,11 +13,11 @@ $(function () { // wait for document ready
 			// animate to second panel
     /*.to("#slideContainer", 0.4, {z: -100})*/		// move back in 3D space
     .to("#slideContainer", 1,   {x: "-33.33%"})	// move in to first panel
-    /*.to("#slideContainer", 0.4, {z: 0})		*/		// move back to origin in 3D space
+    /*.to("#slideContainer", 0.4, {z: 0})	*/			// move back to origin in 3D space
               // animate to third panel
     /*.to("#slideContainer", 0.4, {z: -100, delay: 1})*/
     .to("#slideContainer", 1,   {x: "-66.66%"})
-   /* .to("#slideContainer", 0.4, {z: 0})*/
+    /*.to("#slideContainer", 0.4, {z: 0})*/
 
 	
 
