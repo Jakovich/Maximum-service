@@ -37,22 +37,25 @@
   }
 }
 
- .osago-service__advantage--help::before {
-  background-image: url("../img/icon-direct-help.png");
+.osago-service__advantage--help::before {
+  background-image: url(@icon-direct-help-image);
+  background-position: @icon-direct-help-offset-x @icon-direct-help-offset-y;
   width: 86px;
   height: 109px;
   left: 70px;
  }
 
 .osago-service__advantage--sale::before { 
-  background-image: url("../img/icon-nocrash-sale.png");
+  background-image: url(@icon-nocrash-sale-image);
+  background-position: @icon-nocrash-sale-offset-x @icon-nocrash-sale-offset-y;
   width: 114px;
   height: 107px;
   left: 38px;
 }
 
 .osago-service__advantage--formal::before {
-  background-image: url("../img/icon-quick-formal.png");
+  background-image: url(@icon-quick-formal-image);
+  background-position: @icon-quick-formal-offset-x @icon-quick-formal-offset-y;
   width: 174px;
   height: 93px;
   left: 22px;

@@ -1,7 +1,14 @@
+.main-header {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 50;
+}
 .main-header .layout {
   .clearfix();
   padding: 0;
 }
+
+
 div#header {
   height: 90px;
   padding-bottom: 0;
@@ -195,4 +202,14 @@ div.menu {
 }
 .menu div.children a.open {
   color: #dc1632;
+}
+
+.main-header--to {
+  position: absolute;
+  width: 100%;
+  div#header {
+    height: 80px;
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
 }

@@ -41,7 +41,8 @@
 }
 
  .casco-intro__advantage--reliable::before {
-  background-image: url("../img/icon-reliable-company.png");
+  background-image: url(@icon-reliable-company-image);
+  background-position: @icon-reliable-company-offset-x @icon-reliable-company-offset-y;
   width: 126px;
   height: 107px;
   left: 18px;
@@ -50,7 +51,8 @@
 .casco-intro__advantage--losses { 
   flex-basis: 184px;
   &::before {
-  background-image: url("../img/icon-away-losses.png");
+  background-image: url(@icon-away-losses-image);
+  background-position: @icon-away-losses-offset-x @icon-away-losses-offset-y;
   width: 104px;
   height: 107px;
   left: 38px;
@@ -58,7 +60,8 @@
 }
 
 .casco-intro__advantage--sale::before {
-  background-image: url("../img/icon-assurance-sale.png");
+  background-image: url(@icon-assurance-sale-image);
+  background-position: @icon-assurance-sale-offset-x @icon-assurance-sale-offset-y;
   width: 108px;
   height: 108px;
   left: 22px;

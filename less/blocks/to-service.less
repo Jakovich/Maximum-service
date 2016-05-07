@@ -2,6 +2,7 @@
   background-color: #f8f8f8;
   color: #6a6a6a;
   padding: 10px 0;
+  padding-top: 60px;
   display: flex;
   align-items: center;
 }
@@ -12,7 +13,7 @@
   text-transform: uppercase;
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .to-service__items {
@@ -22,8 +23,8 @@
   justify-content: space-between;
   border-bottom: 1px #c6c6c6 solid;
   padding-bottom: 0;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 35px;
+  margin-bottom: 30px;
   
   &:last-child{
     margin-bottom: 0;
@@ -34,9 +35,9 @@
   font-size: 18px;
   line-height: 28px;
   padding-left: 85px;
-  flex-basis: 210px;
+  flex-basis: 220px;
   position: relative;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   
   &::before {
     position: absolute;
@@ -50,7 +51,9 @@
 .to-service__item--level {
   
   &::before {
-    background-image: url("../img/icon-level.png");
+    background-image: url(@icon-level-image);
+    background-position: @icon-level-offset-x @icon-level-offset-y;
+    top: -15px;
     width: 67px;
     height: 55px;
   }
@@ -59,7 +62,8 @@
 .to-service__item--clutch {
   
   &::before {
-    background-image: url("../img/icon-clutch.png");
+    background-image: url(@icon-clutch-image);
+    background-position: @icon-clutch-offset-x @icon-clutch-offset-y;
     width: 69px;
     top: -5px;
     height: 56px;
@@ -69,7 +73,8 @@
 .to-service__item--battery {
   
   &::before {
-    background-image: url("../img/icon-battery.png");
+    background-image: url(@icon-battery-image);
+    background-position: @icon-battery-offset-x @icon-battery-offset-y;
     top: -10px;
     width: 65px;
     height: 48px;
@@ -79,7 +84,8 @@
 .to-service__item--belt {
   
   &::before {
-    background-image: url("../img/icon-belt.png");
+    background-image: url(@icon-belt-image);
+    background-position: @icon-belt-offset-x @icon-belt-offset-y;
     width: 55px;
     height: 66px;
     top: -15px;
@@ -90,7 +96,8 @@
   
   &::before {
     top: 3px;
-    background-image: url("../img/icon-light.png");
+    background-image: url(@icon-light-image);
+    background-position: @icon-light-offset-x @icon-light-offset-y;
     width: 67px;
     height: 55px;
   }
@@ -99,7 +106,8 @@
 .to-service__item--brake {
   
   &::before {
-    background-image: url("../img/icon-brake.png");
+    background-image: url(@icon-brake-image);
+    background-position: @icon-brake-offset-x @icon-brake-offset-y;
     width: 66px;
     height: 58px;
   }
@@ -109,7 +117,8 @@
   
   &::before {
     top: -7px;
-    background-image: url("../img/icon-suspension.png");
+    background-image: url(@icon-suspension-image);
+    background-position: @icon-suspension-offset-x @icon-suspension-offset-y;
     width: 67px;
     height: 64px;
   }
@@ -119,7 +128,8 @@
   
   &::before {
     top: -15px;
-    background-image: url("../img/icon-wheel.png");
+    background-image: url(@icon-wheel-image);
+    background-position: @icon-wheel-offset-x @icon-wheel-offset-y;
     width: 69px;
     height: 65px;
   }
@@ -129,7 +139,8 @@
   
   &::before {
     top: -10px;
-    background-image: url("../img/icon-parking-brake.png");
+    background-image: url(@icon-parking-brake-image);
+    background-position: @icon-parking-brake-offset-x @icon-parking-brake-offset-y;
     width: 72px;
     height: 40px;
   }
@@ -155,7 +166,8 @@
 
 .to-service__item--oil {
   &::before {
-    background-image: url("../img/icon-oil.png");
+    background-image: url(@icon-oil-image);
+    background-position: @icon-oil-offset-x @icon-oil-offset-y;
     width: 104px;
     height: 101px;
     left: 72px;
@@ -164,7 +176,8 @@
 
 .to-service__item--eco-filter {
   &::before {
-    background-image: url("../img/icon-eco-filter.png");
+    background-image: url(@icon-eco-filter-image);
+    background-position: @icon-eco-filter-offset-x @icon-eco-filter-offset-y;
     width: 96px;
     height: 104px;
     left: 60px;
@@ -173,7 +186,8 @@
 
 .to-service__item--air-filter {
   &::before {
-    background-image: url("../img/icon-air-filter.png");
+    background-image: url(@icon-air-filter-image);
+    background-position: @icon-air-filter-offset-x @icon-air-filter-offset-y;
     width: 118px;
     height: 116px;
     left: 52px;

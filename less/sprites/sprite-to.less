@@ -1,0 +1,253 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@icon-air-filter-name: 'icon-air-filter';
+@icon-air-filter-x: 0px;
+@icon-air-filter-y: 0px;
+@icon-air-filter-offset-x: 0px;
+@icon-air-filter-offset-y: 0px;
+@icon-air-filter-width: 118px;
+@icon-air-filter-height: 116px;
+@icon-air-filter-total-width: 378px;
+@icon-air-filter-total-height: 288px;
+@icon-air-filter-image: '../../img/sprite-to.png';
+@icon-air-filter: 0px 0px 0px 0px 118px 116px 378px 288px '../../img/sprite-to.png' 'icon-air-filter';
+@icon-battery-name: 'icon-battery';
+@icon-battery-x: 312px;
+@icon-battery-y: 128px;
+@icon-battery-offset-x: -312px;
+@icon-battery-offset-y: -128px;
+@icon-battery-width: 65px;
+@icon-battery-height: 48px;
+@icon-battery-total-width: 378px;
+@icon-battery-total-height: 288px;
+@icon-battery-image: '../../img/sprite-to.png';
+@icon-battery: 312px 128px -312px -128px 65px 48px 378px 288px '../../img/sprite-to.png' 'icon-battery';
+@icon-belt-name: 'icon-belt';
+@icon-belt-x: 312px;
+@icon-belt-y: 60px;
+@icon-belt-offset-x: -312px;
+@icon-belt-offset-y: -60px;
+@icon-belt-width: 55px;
+@icon-belt-height: 66px;
+@icon-belt-total-width: 378px;
+@icon-belt-total-height: 288px;
+@icon-belt-image: '../../img/sprite-to.png';
+@icon-belt: 312px 60px -312px -60px 55px 66px 378px 288px '../../img/sprite-to.png' 'icon-belt';
+@icon-brake-name: 'icon-brake';
+@icon-brake-x: 312px;
+@icon-brake-y: 0px;
+@icon-brake-offset-x: -312px;
+@icon-brake-offset-y: 0px;
+@icon-brake-width: 66px;
+@icon-brake-height: 58px;
+@icon-brake-total-width: 378px;
+@icon-brake-total-height: 288px;
+@icon-brake-image: '../../img/sprite-to.png';
+@icon-brake: 312px 0px -312px 0px 66px 58px 378px 288px '../../img/sprite-to.png' 'icon-brake';
+@icon-clutch-name: 'icon-clutch';
+@icon-clutch-x: 69px;
+@icon-clutch-y: 224px;
+@icon-clutch-offset-x: -69px;
+@icon-clutch-offset-y: -224px;
+@icon-clutch-width: 69px;
+@icon-clutch-height: 56px;
+@icon-clutch-total-width: 378px;
+@icon-clutch-total-height: 288px;
+@icon-clutch-image: '../../img/sprite-to.png';
+@icon-clutch: 69px 224px -69px -224px 69px 56px 378px 288px '../../img/sprite-to.png' 'icon-clutch';
+@icon-eco-filter-name: 'icon-eco-filter';
+@icon-eco-filter-x: 0px;
+@icon-eco-filter-y: 118px;
+@icon-eco-filter-offset-x: 0px;
+@icon-eco-filter-offset-y: -118px;
+@icon-eco-filter-width: 96px;
+@icon-eco-filter-height: 104px;
+@icon-eco-filter-total-width: 378px;
+@icon-eco-filter-total-height: 288px;
+@icon-eco-filter-image: '../../img/sprite-to.png';
+@icon-eco-filter: 0px 118px 0px -118px 96px 104px 378px 288px '../../img/sprite-to.png' 'icon-eco-filter';
+@icon-level-name: 'icon-level';
+@icon-level-x: 140px;
+@icon-level-y: 224px;
+@icon-level-offset-x: -140px;
+@icon-level-offset-y: -224px;
+@icon-level-width: 67px;
+@icon-level-height: 55px;
+@icon-level-total-width: 378px;
+@icon-level-total-height: 288px;
+@icon-level-image: '../../img/sprite-to.png';
+@icon-level: 140px 224px -140px -224px 67px 55px 378px 288px '../../img/sprite-to.png' 'icon-level';
+@icon-light-name: 'icon-light';
+@icon-light-x: 312px;
+@icon-light-y: 178px;
+@icon-light-offset-x: -312px;
+@icon-light-offset-y: -178px;
+@icon-light-width: 66px;
+@icon-light-height: 45px;
+@icon-light-total-width: 378px;
+@icon-light-total-height: 288px;
+@icon-light-image: '../../img/sprite-to.png';
+@icon-light: 312px 178px -312px -178px 66px 45px 378px 288px '../../img/sprite-to.png' 'icon-light';
+@icon-middle-up-name: 'icon-middle-up';
+@icon-middle-up-x: 226px;
+@icon-middle-up-y: 0px;
+@icon-middle-up-offset-x: -226px;
+@icon-middle-up-offset-y: 0px;
+@icon-middle-up-width: 84px;
+@icon-middle-up-height: 80px;
+@icon-middle-up-total-width: 378px;
+@icon-middle-up-total-height: 288px;
+@icon-middle-up-image: '../../img/sprite-to.png';
+@icon-middle-up: 226px 0px -226px 0px 84px 80px 378px 288px '../../img/sprite-to.png' 'icon-middle-up';
+@icon-no-up-name: 'icon-no-up';
+@icon-no-up-x: 226px;
+@icon-no-up-y: 82px;
+@icon-no-up-offset-x: -226px;
+@icon-no-up-offset-y: -82px;
+@icon-no-up-width: 83px;
+@icon-no-up-height: 57px;
+@icon-no-up-total-width: 378px;
+@icon-no-up-total-height: 288px;
+@icon-no-up-image: '../../img/sprite-to.png';
+@icon-no-up: 226px 82px -226px -82px 83px 57px 378px 288px '../../img/sprite-to.png' 'icon-no-up';
+@icon-oil-name: 'icon-oil';
+@icon-oil-x: 120px;
+@icon-oil-y: 0px;
+@icon-oil-offset-x: -120px;
+@icon-oil-offset-y: 0px;
+@icon-oil-width: 104px;
+@icon-oil-height: 101px;
+@icon-oil-total-width: 378px;
+@icon-oil-total-height: 288px;
+@icon-oil-image: '../../img/sprite-to.png';
+@icon-oil: 120px 0px -120px 0px 104px 101px 378px 288px '../../img/sprite-to.png' 'icon-oil';
+@icon-parking-brake-name: 'icon-parking-brake';
+@icon-parking-brake-x: 209px;
+@icon-parking-brake-y: 224px;
+@icon-parking-brake-offset-x: -209px;
+@icon-parking-brake-offset-y: -224px;
+@icon-parking-brake-width: 72px;
+@icon-parking-brake-height: 40px;
+@icon-parking-brake-total-width: 378px;
+@icon-parking-brake-total-height: 288px;
+@icon-parking-brake-image: '../../img/sprite-to.png';
+@icon-parking-brake: 209px 224px -209px -224px 72px 40px 378px 288px '../../img/sprite-to.png' 'icon-parking-brake';
+@icon-suspension-name: 'icon-suspension';
+@icon-suspension-x: 0px;
+@icon-suspension-y: 224px;
+@icon-suspension-offset-x: 0px;
+@icon-suspension-offset-y: -224px;
+@icon-suspension-width: 67px;
+@icon-suspension-height: 64px;
+@icon-suspension-total-width: 378px;
+@icon-suspension-total-height: 288px;
+@icon-suspension-image: '../../img/sprite-to.png';
+@icon-suspension: 0px 224px 0px -224px 67px 64px 378px 288px '../../img/sprite-to.png' 'icon-suspension';
+@icon-up-name: 'icon-up';
+@icon-up-x: 98px;
+@icon-up-y: 118px;
+@icon-up-offset-x: -98px;
+@icon-up-offset-y: -118px;
+@icon-up-width: 100px;
+@icon-up-height: 83px;
+@icon-up-total-width: 378px;
+@icon-up-total-height: 288px;
+@icon-up-image: '../../img/sprite-to.png';
+@icon-up: 98px 118px -98px -118px 100px 83px 378px 288px '../../img/sprite-to.png' 'icon-up';
+@icon-wheel-name: 'icon-wheel';
+@icon-wheel-x: 226px;
+@icon-wheel-y: 141px;
+@icon-wheel-offset-x: -226px;
+@icon-wheel-offset-y: -141px;
+@icon-wheel-width: 69px;
+@icon-wheel-height: 65px;
+@icon-wheel-total-width: 378px;
+@icon-wheel-total-height: 288px;
+@icon-wheel-image: '../../img/sprite-to.png';
+@icon-wheel: 226px 141px -226px -141px 69px 65px 378px 288px '../../img/sprite-to.png' 'icon-wheel';
+@spritesheet-width: 378px;
+@spritesheet-height: 288px;
+@spritesheet-image: '../../img/sprite-to.png';
+@spritesheet-sprites: @icon-air-filter @icon-battery @icon-belt @icon-brake @icon-clutch @icon-eco-filter @icon-level @icon-light @icon-middle-up @icon-no-up @icon-oil @icon-parking-brake @icon-suspension @icon-up @icon-wheel;
+@spritesheet: 378px 288px '../../img/sprite-to.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

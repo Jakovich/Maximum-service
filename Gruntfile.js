@@ -129,7 +129,38 @@ module.exports = function(grunt) {
         dest: "img/sprite-diagram.png",
         destCss: "less/sprites/sprite-diagram.less",
         padding: 2
+      },
+      help: {
+        src: "img/sprite-help/*.png",
+        dest: "img/sprite-help.png",
+        destCss: "less/sprites/sprite-help.less",
+        padding: 2
+      },
+      marks: {
+        src: "img/sprite-marks/*.png",
+        dest: "img/sprite-marks.png",
+        destCss: "less/sprites/sprite-marks.less",
+        padding: 2
+      },
+      to: {
+        src: "img/sprite-to/*.png",
+        dest: "img/sprite-to.png",
+        destCss: "less/sprites/sprite-to.less",
+        padding: 2
+      },
+      casco: {
+        src: "img/sprite-casco/*.png",
+        dest: "img/sprite-casco.png",
+        destCss: "less/sprites/sprite-casco.less",
+        padding: 2
+      },
+      osago: {
+        src: "img/sprite-osago/*.png",
+        dest: "img/sprite-osago.png",
+        destCss: "less/sprites/sprite-osago.less",
+        padding: 2
       }
+      
     }
 
   });
