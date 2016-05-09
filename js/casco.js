@@ -1,5 +1,5 @@
 $(document).ready(function() {
-var linksDate = "September 12, 2016 00:00 PM EDT";
+  var linksDate = "June 30, 2016";
  //Flipclock function
   
   function insuranceCounter(date) {
@@ -21,8 +21,8 @@ var linksDate = "September 12, 2016 00:00 PM EDT";
     }
 
       // Instantiate a coutdown FlipClock
-    clock = $('.casco-counter').FlipClock(diff, {
-      clockFace: 'Counter',
+    clock = $(".casco-counter").FlipClock(diff, {
+      clockFace: "Counter",
       countdown: true
     });
   }
