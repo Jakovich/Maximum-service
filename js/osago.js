@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var linksDate = "May 30, 2016";
+  var osagoDate = "May 30, 2016";
  //Flipclock function
   
   function insuranceCounter(date) {
@@ -27,7 +27,7 @@ $(document).ready(function() {
     });
   }
   
-  insuranceCounter(linksDate);
+  insuranceCounter(osagoDate);
   
     
 //Upscroll function
