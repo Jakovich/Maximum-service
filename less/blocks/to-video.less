@@ -14,14 +14,18 @@
 }
 
 .to-video__items {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 40px;
+  .clearfix();
 }
 
 .to-video__item {
   margin: 30px 0;
-  
+  float: left;
+  width: 397px;
+  margin-right: 62px;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
   to-video__yt {
     width: 397px;
     height: 284px;

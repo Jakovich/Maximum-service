@@ -37,4 +37,55 @@ $(function () { // wait for document ready
     $("body,html").animate({scrollTop:0},800);
 
   });
+  
+  var videoItems = $(".to-video__items");
+  var linkMore = $(".to-video__link");
+  var PAGE_SIZE = 1;
+  var pageNumber = 0;
+  
+  
+  
+  var videoItemsInabled = [];
+  
+  for (var i = 0; i < videoItems.length; i++) {
+    if (videoItems[i].style.display === "none"){
+      videoItemsInabled.push(videoItems[i]);
+    }
+  }
+  
+  
+  function showMore() {
+    linkMore.click(function(event){
+      event.preventDefault();
+        pageNumber++;
+        renderReviews(videoItemsInabled, pageNumber);
+    });
+  }
+  
+  function renderReviews(arr, page) {
+
+    var from = page * PAGE_SIZE;
+    
+    var to = from + PAGE_SIZE;
+    
+    arr.slice(from, to).forEach(function(items) {
+      items.style.display = "block";
+    });
+    
+    /*if (!(isNextPageAvailable(reviews, pageNumber, PAGE_SIZE))) {
+      linkMore.style.display = "none";
+    }*/
+  }
+  showMore();
+  /*linkMore.click(function(event){
+  event.preventDefault();
+    for (var i = 0; i < videoItems.length; i++) {
+      if (!(videoItems[i].style.display === "block")){
+        videoItems[i].style.display = "block"
+      }
+    }
+});*/
+  
+ 
+  
 });
