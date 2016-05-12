@@ -58,11 +58,11 @@ $(function () { // wait for document ready
     linkMore.click(function(event){
       event.preventDefault();
         pageNumber++;
-        renderReviews(videoItemsInabled, pageNumber);
+        renderReviews(videoItemsInabled, pageNumber, this);
     });
   }
   
-  function renderReviews(arr, page) {
+  function renderReviews(arr, page, link) {
 
     var from = page * PAGE_SIZE;
     
@@ -72,20 +72,11 @@ $(function () { // wait for document ready
       items.style.display = "block";
     });
     
-    /*if (!(isNextPageAvailable(reviews, pageNumber, PAGE_SIZE))) {
-      linkMore.style.display = "none";
-    }*/
+    if (page === (arr.length - 1)) {
+      link.style.display = "none";
+    }
+    
   }
   showMore();
-  /*linkMore.click(function(event){
-  event.preventDefault();
-    for (var i = 0; i < videoItems.length; i++) {
-      if (!(videoItems[i].style.display === "block")){
-        videoItems[i].style.display = "block"
-      }
-    }
-});*/
-  
- 
-  
+
 });
