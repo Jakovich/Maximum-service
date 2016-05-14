@@ -96,6 +96,11 @@ $(function () { // wait for document ready
     
     arr.slice(from, to).forEach(function(items) {
       items.style.display = "block";
+      var iframs = items.querySelectorAll("iframe");
+      for (var i = 0; i < iframs.length; i++ ){
+        var atr = iframs[i].getAttribute("data-src");
+        iframs[i].setAttribute("src", atr);
+      }
     });
     
     if (page === (arr.length - 1)) {
