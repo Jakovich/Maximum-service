@@ -13,37 +13,33 @@ $(document).ready(function() {
   
   var GETArr = parseGetParams();
   
-  var osagoDate = GETArr.varExpire;
+  var osagoDate = GETArr.expire;
   
-  var osagoDate = "May 30, 2016"; //для проверки
+  var osagoDateValue = parseInt(osagoDate, 10);
+  
+  var osagoDateValue = 0; //для проверки
  //Flipclock function
+  var cascoText = document.querySelector(".insurance-period__counter");
   
-  function insuranceCounter(date) {
-    var clock;
-
-      // Set dates.
-    var futureDate  = new Date(date);
-    var currentDate = new Date();
-
-      // Calculate day difference
-    function dayDiff(first, second) {
-      return (second-first)/(1000*60*60*24);
-    }
-    
-    var diff = dayDiff(currentDate, futureDate);
-
-    if(diff < 0) {
-      diff = 0;
-    }
+  if (!isNaN(osagoDateValue) & osagoDateValue > 0){
+  var clock;
+  
+      // Instantiate a coutdown FlipClock
 
       // Instantiate a coutdown FlipClock
-    clock = $(".osago-counter").FlipClock(diff, {
-      clockFace: "Counter",
-      countdown: true
+    clock = $(".osago-counter").FlipClock(osagoDateValue, {
+      clockFace: "Counter"
     });
+    
+  } else {
+    cascoText.innerHTML = "Ваш страховой полис ОСАГО закончился";
+    $(cascoText).css("text-align", "center");
   }
   
-  insuranceCounter(osagoDate);
+  
+
+  
+
   
     
 //Upscroll function

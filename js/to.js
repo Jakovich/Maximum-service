@@ -6,7 +6,33 @@ $(function () { // wait for document ready
     $(".panel").removeClass("panel");
   }
   
+  function parseGetParams() { 
+    var $_GET = {}; 
+    var __GET = window.location.search.substring(1).split("&")
+    if(__GET[0] == "") return false;
+    for(var i=0; i<__GET.length; i++) { 
+      var getVar = __GET[i].split("="); 
+      $_GET[getVar[0]] = typeof(getVar[1])=="undefined" ? "" : getVar[1]; 
+    } 
+    return $_GET; 
+  } 
+  
+  var GETArr = parseGetParams();
+  
+  var toDate = GETArr.expire;
+  
+  var toDateValue = parseInt(toDate, 10);
+  
+  var toCounter = document.querySelector(".to-counter");
+  
+  toDateValue = 210; //для примера
+  
+  if(!isNaN(toDateValue)) {
+    toCounter.innerHTML = toDateValue;
+  }
+  
   var controller = new ScrollMagic.Controller();
+
 
 		// define movement of panels
   var wipeAnimation = new TimelineMax()
@@ -78,5 +104,7 @@ $(function () { // wait for document ready
     
   }
   showMore();
+  
+  
 
 });

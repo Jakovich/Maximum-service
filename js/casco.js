@@ -13,38 +13,25 @@ $(document).ready(function() {
   
   var GETArr = parseGetParams();
   
-  var cascoDate = GETArr.varExpire;
+  var cascoDate = GETArr.expire;
   
-  var cascoDate = "June 30, 2016"; //для проверки
+  var cascoDateValue = parseInt(cascoDate, 10);
+  var cascoText = document.querySelector(".insurance-period__counter");
+  cascoDateValue = 21; //для проверки
  //Flipclock function
+  if (!isNaN(cascoDateValue) & cascoDateValue > 0){
+  var clock;
   
-  function insuranceCounter(date) {
-    var clock;
-
-      // Set dates.
-    var futureDate  = new Date(date);
-    var currentDate = new Date();
-
-      // Calculate day difference
-    function dayDiff(first, second) {
-      return (second-first)/(1000*60*60*24);
-    }
-    
-    var diff = dayDiff(currentDate, futureDate);
-
-    if(diff < 0) {
-      diff = 0;
-    }
-
       // Instantiate a coutdown FlipClock
-    clock = $(".casco-counter").FlipClock(diff, {
-      clockFace: "Counter",
-      countdown: true
-    });
+  clock = $(".casco-counter").FlipClock(cascoDateValue, {
+    clockFace: "Counter"
+    
+  });
+  } else {
+    cascoText.innerHTML = "Ваш страховой полис КАСКО закончился";
+    $(cascoText).css("text-align", "center");
   }
-  
-  insuranceCounter(cascoDate);
-  
+ 
     
 //Upscroll function
   $("#up-scroll").click(function() {
