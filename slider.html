@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Максимум ТО</title>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  
+  
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div id="pinContainer">
+    <header class="main-header main-header--to">
+      <div class="wrapper">
+        <div class="layout2" id="header">
+          <div class="layout">
+            <div id="logo">
+              <img title="Автосалон «Максимум» " src="img/logo.png" class="logo" alt="">
+            </div>
+            <div class="header-phone-address">
+              <div onclick="Form.showModal()" class="header-phone-order"></div>					
+              <div class="header-phone">
+                <span onclick="Form.showModal()">			+7 (812)<strong>777-77-11</strong></span>					
+                </div>
+                <!--<a href="mailto:dgmarketing@maximum-avto.ru" class="header-mail"></a>-->
+                <a class="header-soc-net header-soc-net--fb" href="https://www.facebook.com/Автохолдинг-Максимум-199562167064125/"></a>
+                <a class="header-soc-net header-soc-net--inst" href="https://www.instagram.com/mir_maximum/"></a>
+                <a class="header-soc-net header-soc-net--vk" href="http://vk.com/spb_maximum"></a>
+                <a class="header-soc-net header-soc-net--yt" href="https://www.youtube.com/channel/UCxI2iUhG_m8PLEmjPwDFt9w?sub_confirmation=1"></a>
+            </div>
+
+            <div class="menu noPrint">
+              <ul class="menu l0">
+                <li class="menuItem first withChildren l0 i0" id="menu_138">						
+                  <div class="name menuItem first withChildren l0 i0"><a title="Холдинг" href="/holding/" class="menuItemName menuItem first withChildren l0 i0">Холдинг<span></span></a>
+                  </div>
+                  <div id="subMenu_138" class="children menuItem first withChildren l0 i0">
+                    <ul class="menu l1">
+                      <li class="menuItem first l1 i0" id="menu_145">						
+                        <div class="name menuItem first l1 i0"><a title="Максимум - официальный дилер Honda в Санкт-Петербурге" href="/brand-honda/" class="menuItemName menuItem first l1 i0">Honda<span></span></a></div>
+                      </li>
+                      <li class="menuItem l1 i1" id="menu_144">						
+                        <div class="name menuItem l1 i1"><a title="" href="/brand-ford/" class="menuItemName menuItem l1 i1">Ford<span></span></a></div>
+                      </li>
+                      <li class="menuItem l1 i2" id="menu_146">						
+                        <div class="name menuItem l1 i2"><a title="Максимум - официальный дилер Hyundai (Хендай) в Санкт-Петербурге" href="/brand-hyundai/" class="menuItemName menuItem l1 i2">Hyundai<span></span></a></div>
+                      </li>
+                      <li class="menuItem l1 i3" id="menu_147">						
+                        <div class="name menuItem l1 i3"><a title="" href="/brand-mitsubishi/" class="menuItemName menuItem l1 i3">Mitsubishi<span></span></a></div>
+                      </li>
+                      <li class="menuItem l1 i4" id="menu_148"><div class="name menuItem l1 i4"><a title="" href="/brand-suzuki/" class="menuItemName menuItem l1 i4">Suzuki<span></span></a></div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menuItem l0 i1" id="menu_136">
+                  <div class="name menuItem l0 i1"><a title="Сервис «Максимум»" href="/service/" class="menuItemName menuItem l0 i1">Сервис<span></span></a></div>
+                </li>
+                <li class="menuItem l0 i2" id="menu_140"><div class="name menuItem l0 i2"><a title="Акции «Максимум»" href="/actions/" class="menuItemName menuItem l0 i2">Акции<span></span></a></div>
+                </li>
+                <li class="menuItem l0 i3" id="menu_139">						
+                  <div class="name menuItem l0 i3"><a title="Вакансии Максимум в Санкт-Петербурге" href="/vacancies/" class="menuItemName menuItem l0 i3">Вакансии<span></span></a></div>
+                </li>
+                <li class="menuItem l0 i4" id="menu_152">
+                  <div class="name menuItem l0 i4"><a title="Блог" href="/blog/" class="menuItemName menuItem l0 i4">Блог<span></span></a></div>
+                </li>
+                <li class="menuItem l0 i5" id="menu_135">						
+                  <div class="name menuItem l0 i5"><a title="Контакты" href="/contacts/" class="menuItemName menuItem l0 i5">Контакты<span></span></a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+    <div id="slideContainer">
+      <section class="panel to-intro">
+        
+        <a id="bgndVideo" class="player" data-property="{videoURL:'https://youtu.be/URn9Ewdas00',containment:'.to-intro', autoPlay:true, mute:true, startAt:0, opacity:1, showControls:false, addRaster:true}"></a>
+		
+		<div class="video-overlay"></div>
+        <div class="wrapper">
+          <div class="to-intro__text">
+            <p>Последний раз вы были на ТО<br><span class="to-counter">300</span> дней назад</p> 
+            <p>Проверьте, не проехали ли вы очередные 15 000 километров</p>
+          </div>
+          <div class="to-intro__form">
+            <form action="post" name="subscribe-to" class="insurance-form insurance-form--to">
+              <select name="mark">
+                <option disabled selected>Марка</option>
+                <option value="Honda">Honda</option>
+                <option value="Ford">Ford</option>
+                <option value="Hyndai">Hyundai</option>
+                <option value="Mitsubishi">Mitsubishi</option>
+                <option value="Suzuki">Suzuki</option>
+              </select>
+              <input type="text" name="name" placeholder="Ваше имя">
+              <input type="text" name="phone" placeholder="Ваш телефон">
+              <button type="submit">Заказать</button>
+            </form>
+          </div>
+          <div class="to-intro__marks">
+          <div class="to-marks">
+              <div  class="to-marks__item to-marks__item--honda"  title="Honda"> </div>
+              <div class="to-marks__item to-marks__item--ford" title="Ford"></div>
+              <div class="to-marks__item to-marks__item--mitsubishi"  title="Mitsubishi"></div>
+             <div class="to-marks__item to-marks__item--huyndai"  title="Huyndai"></div>
+              <div title="Suzuki" class="to-marks__item to-marks__item--suzuki"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel to-frequency">
+        <div class="wrapper">
+          <div class="to-frequency__inner">
+           <p class="to-frequency__text">Рекомендованная производителем частота прохождения ТО</p>
+           <div class="to-counter">
+             <img src="img/to-counter.gif" width="300" height="300" alt="">
+           </div>
+           <p class="to-frequency__text">Максимальное отклонение от установленных интервалов ТО</p>
+           <p class="to-frequency__text to-frequency__text--uppercase">не должно превышать 1 000 километров<br>или 1 месяц эксплуатации</p> 
+           <p class="to-frequency__text to-frequency__text--small">(В зависимости от того, что наступит раньше)</p>
+           <p class="to-frequency__text to-frequency__text--reference">*Сроки регулярного ТО смотрите в руководстве по эксплуатаци автомобиля</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel to-service">
+        <div class="wrapper"> 
+          <h2 class="to-service__title">Проверим:</h2>
+            <div class="to-service__items">
+              <div class="to-service__item to-service__item--level">Уровни рабочих жидкостей </div>
+              <div class="to-service__item to-service__item--clutch">Работу сцепления </div>
+              <div class="to-service__item to-service__item--battery">Батарею аккумулятора</div>
+              <div class="to-service__item to-service__item--belt">Ремни безопасности</div>
+              <div class="to-service__item to-service__item--light">Внутреннее и наружное освещение</div>
+              <div class="to-service__item to-service__item--brake">Тормозные диски и&nbsp;колодки</div>
+              <div class="to-service__item to-service__item--suspension">Переднюю и заднюю подвеску</div>
+              <div class="to-service__item to-service__item--wheel">Рулевое управление</div>
+              <div class="to-service__item to-service__item--parking-brake">Стояночный тормоз</div>
+            </div>
+            <h2 class="to-service__title">Заменим:</h2>
+            <div class="to-service__items to-service__items--big">
+              <div class="to-service__item to-service__item--oil">Масло и масляный фильтр </div>
+              <div class="to-service__item to-service__item--eco-filter">Экологический фильтр салона</div>
+              <div class="to-service__item to-service__item--air-filter">Воздушный фильтр двигателя</div>
+            </div>
+          </div>
+      </section>
+    </div>
+  </div>
+  <section class="to-test">
+    <div class="wrapper">
+      <h3 class="to-test__title">Диалоговая приемка</h3>
+      <div class="to-test__subtitle">
+        <p class="to-test__subtitle-text">Проверка автомобиля на линии диагностики совместно с мастером консультантом.</p>
+        <p class="to-test__subtitle-text to-test__subtitle-text--uppercase">Автомобиль изучается в трех положениях:</p>
+      </div> 
+      <div class="to-test__items">
+        <div class="to-test__item to-test__item--no-up">Без подъема</div>
+        <div class="to-test__item to-test__item--middle-up">В приподнятом состоянии</div>
+        <div class="to-test__item to-test__item--up">В поднятом состоянии</div>
+      </div>
+
+      <div class="to-test__ecplics">
+        <div class="to-test__ecplics__items">
+          <div class="to-test__ecplic-item" id="forthShow">Вместе составим план ремонта&nbsp;автомобиля</div>
+          <div class="to-test__ecplic-item" id="thirdShow">Совместно снимем и&nbsp; расшифруем&nbsp;показатели оборудования линии диагностики</div>
+        </div>
+     
+      
+        <div class="to-test__diagram"><div class="to-test__diagram-text">15 минут</div></div>
+
+        <div class="to-test__ecplics__items">
+          <div class="to-test__ecplic-item" id="firstShow">Подробно расскажем про&nbsp;состояние автомобиля</div>
+          <div class="to-test__ecplic-item" id="secondShow">Ответим на любые вопросы</div>
+        </div>
+      </div>
+    </div>   
+  </section>
+  
+  
+  <footer class="main-footer">
+    <div class="wrapper">
+      <div id="footer">
+          <div class="layout">
+            <div class="footer-logo">
+              <a href="/"><img alt="logo" src="http://максимум.рф/i/logo.footer.png"></a>
+            </div>
+            <div class="footer-col">
+              <ul class="footer-list menuFooter l0">
+                <li class="menuFooterItem first l0 i0" id="menu_145">
+                  <div class="name menuFooterItem first l0 i0"><a title="Максимум - официальный дилер Honda в Санкт-Петербурге" href="/brand-honda/" class="menuItemName menuFooterItem first l0 i0">Honda<span></span></a></div>
+                </li>
+                <li class="menuFooterItem l0 i1" id="menu_144">                        
+                  <div class="name menuFooterItem l0 i1"><a title="" href="/brand-ford/" class="menuItemName menuFooterItem l0 i1">Ford<span></span></a></div>
+                </li>
+                <li class="menuFooterItem l0 i2" id="menu_146">                        
+                  <div class="name menuFooterItem l0 i2"><a title="Максимум - официальный дилер Hyundai (Хендай) в Санкт-Петербурге" href="/brand-hyundai/" class="menuItemName menuFooterItem l0 i2">Hyundai<span></span></a></div>
+                </li>
+                <li class="menuFooterItem l0 i3" id="menu_147">                        
+                  <div class="name menuFooterItem l0 i3"><a title="" href="/brand-mitsubishi/" class="menuItemName menuFooterItem l0 i3">Mitsubishi<span></span></a></div>
+                </li>
+                <li class="menuFooterItem l0 i4" id="menu_148">                        
+                  <div class="name menuFooterItem l0 i4"><a title="" href="/brand-suzuki/" class="menuItemName menuFooterItem l0 i4">Suzuki<span></span></a></div>
+                </li>                
+              </ul>
+
+            </div>
+
+            <div class="footer-col">
+              <ul class="footer-list menuFooter l0">
+                <li class="menuFooterItem first l0 i0" id="menu_138">                        
+                  <div class="name menuFooterItem first l0 i0"><a title="Холдинг" href="/holding/" class="menuItemName menuFooterItem first l0 i0">Холдинг<span></span></a></div>
+                </li>
+                <li class="menuFooterItem l0 i1" id="menu_136"><div class="name menuFooterItem l0 i1"><a title="Сервис «Максимум»" href="/service/" class="menuItemName menuFooterItem l0 i1">Сервис<span></span></a></div>
+                </li>
+                <li class="menuFooterItem l0 i2" id="menu_151"><div class="name menuFooterItem l0 i2"><a title="" href="/contacts/" class="menuItemName menuFooterItem l0 i2">Как нас найти<span></span></a></div>
+                </li>                
+              </ul>
+
+            </div>
+
+            <div class="footer-col">
+              <ul class="footer-list menuFooter l0">
+                <li class="menuFooterItem first l0 i0" id="menu_140"><div class="name menuFooterItem first l0 i0"><a title="Акции «Максимум»" href="/actions/" class="menuItemName menuFooterItem first l0 i0">Акции (20)<span></span></a></div>
+                </li>               
+              </ul>
+
+            </div>
+
+            <div class="footer-col">
+              <ul class="footer-list menuFooter l0">
+                <li class="menuFooterItem first l0 i0" id="menu_139">                        
+                  <div class="name menuFooterItem first l0 i0"><a title="Вакансии Максимум в Санкт-Петербурге" href="/vacancies/" class="menuItemName menuFooterItem first l0 i0">Вакансии (8)<span></span></a></div>
+                </li>                
+              </ul>
+
+          </div>
+
+
+          <a target="_blank" title="Создание и продвижение сайта осуществляет студия PlayNext" href="http://www.playnext.ru/" id="PlayNext"></a>
+
+          <div id="up-scroll"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/video.js"></script>
+  <script src="js/to.js"></script>
+  <script src="js/to-anim.js"></script>
+</body>
+</html>
