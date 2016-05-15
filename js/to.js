@@ -40,13 +40,13 @@ $(function () { // wait for document ready
 			// animate to second panel
     //.to("#slideContainer", 0.4, {z: 0})// move back in 3D space
     .to("#slideContainer", 2,   {x: "-33.33%", delay: 2})	// move in to first panel
-    .to("#slideContainer", 2, {z: 0, delay: 2})				// move back to origin in 3D space
+    .to("#slideContainer", 40, {z: 0, delay: 2})				// move back to origin in 3D space
               // animate to third panel
     //.to("#slideContainer", 0.4, {z: -100, delay: 1})
     .to("#slideContainer", 2,   {x: "-66.66%", delay: 2})
     
 
-    .to("#slideContainer", 4, {z: 0, delay: 2})
+    .to("#slideContainer", 40, {z: 0, delay: 2})
 
 	
 
