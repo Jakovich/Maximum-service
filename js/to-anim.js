@@ -19,7 +19,6 @@ $(function () {
   var controller = new ScrollMagic.Controller();
   var scene = new ScrollMagic.Scene({
     triggerElement: ".to-test",
-    offset: 100,
     reverse: false
   })
   .setTween(opacityElem) // trigger a TweenMax.to tween
