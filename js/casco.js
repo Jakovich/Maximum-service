@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function() {
   
   function parseGetParams() { 
@@ -17,7 +19,7 @@ $(document).ready(function() {
   
   var cascoDateValue = parseInt(cascoDate, 10);
   var cascoText = document.querySelector(".insurance-period__counter");
-  cascoDateValue = 21; //для проверки
+
  //Flipclock function
   if (!isNaN(cascoDateValue) & cascoDateValue > 0){
   var clock;

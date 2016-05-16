@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function() {
   
   function parseGetParams() { 
@@ -36,10 +38,6 @@ $(document).ready(function() {
     $(cascoText).css("text-align", "center");
   }
   
-  
-
-  
-
   
     
 //Upscroll function

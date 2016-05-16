@@ -1,11 +1,19 @@
+"use strict";
+
 $(function () { // wait for document ready
-		// init
+  //отключение горизонтального скролла для планшетов и мобильных
   if ($(window).width() <= 1354) {
     $("#pinContainer").removeAttr("id");
     $("#slideContainer").removeAttr("id");
     $(".panel").removeClass("panel");
   }
   
+  //подключение фонового видео
+  
+  $(".player").mb_YTPlayer();
+  
+  
+  //получение параметров из ссылки
   function parseGetParams() { 
     var $_GET = {}; 
     var __GET = window.location.search.substring(1).split("&")
@@ -25,26 +33,26 @@ $(function () { // wait for document ready
   
   var toCounter = document.querySelector(".to-counter");
   
-  toDateValue = 210; //для примера
   
   if(!isNaN(toDateValue)) {
     toCounter.innerHTML = toDateValue;
   }
-  var dur = $('#slideContainer').outerWidth();
+  
+  
+  //горизонтальных скролл
   
   var controller = new ScrollMagic.Controller();
 
 
 		// define movement of panels
   var wipeAnimation = new TimelineMax()
-			// animate to second panel
+		// animate to second panel
     //.to("#slideContainer", 0.4, {z: 0})// move back in 3D space
     .to("#slideContainer", 2,   {x: "-33.33%", delay: 2})	// move in to first panel
     .to("#slideContainer", 40, {z: 0, delay: 2})				// move back to origin in 3D space
               // animate to third panel
     //.to("#slideContainer", 0.4, {z: -100, delay: 1})
     .to("#slideContainer", 2,   {x: "-66.66%", delay: 2})
-    
 
     .to("#slideContainer", 40, {z: 0, delay: 2})
 
@@ -61,18 +69,14 @@ $(function () { // wait for document ready
     /*.addIndicators() // add indicators (requires plugin)*/
     .addTo(controller);
   
-    $("#up-scroll").click(function() {
-
-    $("body,html").animate({scrollTop:0},800);
-
-  });
+   
+  
+  //загрузки и показ видео при нажатии на кнопку смотреть еще
   
   var videoItems = $(".to-video__items");
   var linkMore = $(".to-video__link");
   var PAGE_SIZE = 1;
   var pageNumber = 0;
-  
-  
   
   var videoItemsInabled = [];
   
@@ -111,8 +115,41 @@ $(function () { // wait for document ready
     }
     
   }
+  
   showMore();
   
+  // анимация секции диалоговая приемка
   
+  var opacityElem = new TimelineMax();
+    opacityElem
+      .to(".to-test__diagram", 0, {backgroundPosition: "0 0"}, '-=1')
+      .to("#firstShow", 0.5, {opacity:1})
+      .to(".to-test__diagram", 0, {backgroundPosition: "-325px 0"}, '-=0.5')
+      .to(".to-test__diagram", 0, {backgroundPosition: "0 -325px"})
+      .to("#secondShow", 0.5, {opacity: 1},'=0.5')
+      .to(".to-test__diagram", 0, {backgroundPosition: "-325px -325px"},'-=0.5')
+      .to(".to-test__diagram", 0, {backgroundPosition: "-650px -0"})
+      .to("#thirdShow", 0.5, {opacity: 1},'=0.5')
+      .to(".to-test__diagram", 0, {backgroundPosition: "-650px -325px"},'-=0.5')
+      .to(".to-test__diagram", 0, {backgroundPosition: "0 -650px"})
+      .to("#forthShow", 0.5, {opacity: 1},'=0.5')
+      .to(".to-test__diagram-text", 0.3, {opacity: 1},'-=0.5')
+      .to(".to-test__diagram", 0, {backgroundPosition: "-325px -650px"},'-=0.5')
+      .to(".to-test__diagram", 0, {backgroundPosition: "-650px -650px"});
+  var controller = new ScrollMagic.Controller();
+  var scene = new ScrollMagic.Scene({
+    triggerElement: ".to-test",
+    reverse: false
+  })
+  .setTween(opacityElem) // trigger a TweenMax.to tween
+  /*.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)*/
+  .addTo(controller);
+  
+  //скролл вверх при нажатии на кнопку
+  
+ $("#up-scroll").click(function() {
 
+    $("body,html").animate({scrollTop:0},800);
+
+  });
 });
