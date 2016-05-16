@@ -19,7 +19,7 @@ $(document).ready(function() {
   
   var osagoDateValue = parseInt(osagoDate, 10);
   
-  var osagoDateValue = 0; //для проверки
+ 
  //Flipclock function
   var cascoText = document.querySelector(".insurance-period__counter");
   
