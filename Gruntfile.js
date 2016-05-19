@@ -161,6 +161,16 @@ module.exports = function(grunt) {
         padding: 2
       }
       
+    },
+    
+    uglify: {
+      js_min: {
+        files: {
+          "build/js/casco.min.js": ["build/js/casco.js"],
+          "build/js/osago.min.js": ["build/js/osago.js"],
+          "build/js/to.min.js": ["build/js/to.js"]
+        }
+      }
     }
 
   });
@@ -172,7 +182,8 @@ module.exports = function(grunt) {
     "less",
     "postcss",
     "csso",
-    "imagemin"
+    "imagemin",
+    "uglify"
       
 
   ]);
