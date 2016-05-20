@@ -41,7 +41,7 @@ $(function () { // wait for document ready
   
   //горизонтальных скролл
   
-  var controller = new ScrollMagic.Controller();
+  var controller1 = new ScrollMagic.Controller();
 
 
 		// define movement of panels
@@ -62,12 +62,12 @@ $(function () { // wait for document ready
   new ScrollMagic.Scene({
     triggerElement: "#pinContainer",
     triggerHook: "onLeave",
-    duration: "50%"
+    duration: "100%"
   })
     .setPin("#pinContainer")
     .setTween(wipeAnimation)
     /*.addIndicators() // add indicators (requires plugin)*/
-    .addTo(controller);
+    .addTo(controller1);
   
    
   
