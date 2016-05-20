@@ -43,7 +43,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: ["js/**/*.js"],
-        tasks: ["copy:js"],
+        tasks: ["copy:js", "uglify"],
         options: {
             spawn: false
           }
