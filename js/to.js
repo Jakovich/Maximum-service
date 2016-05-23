@@ -42,6 +42,7 @@ $(function () { // wait for document ready
   }
   
   
+  
   //горизонтальных скролл
   
   var controller1 = new ScrollMagic.Controller();
