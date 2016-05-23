@@ -33,9 +33,12 @@ $(function () { // wait for document ready
   
   var toCounter = document.querySelector(".to-counter");
   
+  var toText = document.querySelector(".to-intro__text");
   
   if(!isNaN(toDateValue)) {
     toCounter.innerHTML = toDateValue;
+  } else {
+    toText.innerHTML = "Проверьте, не проехали ли Вы очередные 15 000 километров";
   }
   
   
