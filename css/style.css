@@ -1552,7 +1552,7 @@ This must be run when you have at least 2 sprites.
   text-align: center;
   width: 323px;
   height: 323px;
-  background-image: url("../../img/sprite-diagram.png");
+  background-image: url("../img/sprite-diagram.png");
   background-position: 0px 0px;
 }
 .to-video {
