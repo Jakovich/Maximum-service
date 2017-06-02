@@ -647,7 +647,7 @@ This must be run when you have at least 2 sprites.
   top: 0;
 }
 .casco-intro__advantage--reliable::before {
-  background-image: url('../../img/sprite-casco.png');
+  background-image: url('../img/sprite-casco.png');
   background-position: 0px -122px;
   width: 126px;
   height: 107px;
@@ -659,14 +659,14 @@ This must be run when you have at least 2 sprites.
           flex-basis: 184px;
 }
 .casco-intro__advantage--losses::before {
-  background-image: url('../../img/sprite-casco.png');
+  background-image: url('../img/sprite-casco.png');
   background-position: 0px -231px;
   width: 104px;
   height: 107px;
   left: 38px;
 }
 .casco-intro__advantage--sale::before {
-  background-image: url('../../img/sprite-casco.png');
+  background-image: url('../img/sprite-casco.png');
   background-position: -257px -114px;
   width: 108px;
   height: 108px;
@@ -812,27 +812,27 @@ This must be run when you have at least 2 sprites.
   height: 83px;
 }
 .insurance-help__item--onroad::before {
-  background-image: url('../../img/sprite-help.png');
+  background-image: url('../img/sprite-help.png');
   background-position: -88px -85px;
 }
 .insurance-help__item--evacuation::before {
-  background-image: url('../../img/sprite-help.png');
+  background-image: url('../img/sprite-help.png');
   background-position: 0px 0px;
 }
 .insurance-help__item--info::before {
-  background-image: url('../../img/sprite-help.png');
+  background-image: url('../img/sprite-help.png');
   background-position: -88px 0px;
 }
 .insurance-help__item--juridic::before {
-  background-image: url('../../img/sprite-help.png');
+  background-image: url('../img/sprite-help.png');
   background-position: 0px -85px;
 }
 .insurance-help__item--quantity::before {
-  background-image: url('../../img/sprite-help.png');
+  background-image: url('../img/sprite-help.png');
   background-position: -176px 0px;
 }
 .insurance-help__item--time::before {
-  background-image: url('../../img/sprite-help.png');
+  background-image: url('../img/sprite-help.png');
   background-position: -176px -85px;
 }
 .insurance-help__form {
@@ -905,19 +905,19 @@ This must be run when you have at least 2 sprites.
   top: -15px;
 }
 .casco-service__item--view::before {
-  background-image: url('../../img/sprite-casco.png');
+  background-image: url('../img/sprite-casco.png');
   background-position: -138px 0px;
   width: 117px;
   height: 118px;
 }
 .casco-service__item--estimate::before {
-  background-image: url('../../img/sprite-casco.png');
+  background-image: url('../img/sprite-casco.png');
   background-position: 0px 0px;
   width: 136px;
   height: 120px;
 }
 .casco-service__item--spares::before {
-  background-image: url('../../img/sprite-casco.png');
+  background-image: url('../img/sprite-casco.png');
   background-position: -257px 0px;
   width: 114px;
   height: 112px;
@@ -927,7 +927,7 @@ This must be run when you have at least 2 sprites.
   width: 165px;
 }
 .casco-service__item--repair::before {
-  background-image: url('../../img/sprite-casco.png');
+  background-image: url('../img/sprite-casco.png');
   background-position: -106px -231px;
   width: 118px;
   height: 74px;
@@ -937,7 +937,7 @@ This must be run when you have at least 2 sprites.
   width: 170px;
 }
 .casco-service__item--happy::before {
-  background-image: url('../../img/sprite-casco.png');
+  background-image: url('../img/sprite-casco.png');
   background-position: -128px -122px;
   width: 127px;
   height: 95px;
@@ -1120,21 +1120,21 @@ This must be run when you have at least 2 sprites.
   top: 0;
 }
 .osago-service__advantage--help::before {
-  background-image: url('../../img/sprite-osago.png');
+  background-image: url('../img/sprite-osago.png');
   background-position: -176px 0px;
   width: 86px;
   height: 109px;
   left: 70px;
 }
 .osago-service__advantage--sale::before {
-  background-image: url('../../img/sprite-osago.png');
+  background-image: url('../img/sprite-osago.png');
   background-position: 0px -95px;
   width: 114px;
   height: 107px;
   left: 38px;
 }
 .osago-service__advantage--formal::before {
-  background-image: url('../../img/sprite-osago.png');
+  background-image: url('../img/sprite-osago.png');
   background-position: 0px 0px;
   width: 174px;
   height: 93px;
@@ -1236,28 +1236,28 @@ This must be run when you have at least 2 sprites.
   top: 0;
 }
 .to-service__item--level::before {
-  background-image: url('../../img/sprite-to.png');
+  background-image: url('../img/sprite-to.png');
   background-position: -140px -224px;
   top: -15px;
   width: 67px;
   height: 55px;
 }
 .to-service__item--clutch::before {
-  background-image: url('../../img/sprite-to.png');
+  background-image: url('../img/sprite-to.png');
   background-position: -69px -224px;
   width: 69px;
   top: -5px;
   height: 56px;
 }
 .to-service__item--battery::before {
-  background-image: url('../../img/sprite-to.png');
+  background-image: url('../img/sprite-to.png');
   background-position: -312px -128px;
   top: -10px;
   width: 65px;
   height: 48px;
 }
 .to-service__item--belt::before {
-  background-image: url('../../img/sprite-to.png');
+  background-image: url('../img/sprite-to.png');
   background-position: -312px -60px;
   width: 55px;
   height: 66px;
@@ -1265,34 +1265,34 @@ This must be run when you have at least 2 sprites.
 }
 .to-service__item--light::before {
   top: 3px;
-  background-image: url('../../img/sprite-to.png');
+  background-image: url('../img/sprite-to.png');
   background-position: -312px -178px;
   width: 67px;
   height: 55px;
 }
 .to-service__item--brake::before {
-  background-image: url('../../img/sprite-to.png');
+  background-image: url('../img/sprite-to.png');
   background-position: -312px 0px;
   width: 66px;
   height: 58px;
 }
 .to-service__item--suspension::before {
   top: -7px;
-  background-image: url('../../img/sprite-to.png');
+  background-image: url('../img/sprite-to.png');
   background-position: 0px -224px;
   width: 67px;
   height: 64px;
 }
 .to-service__item--wheel::before {
   top: -15px;
-  background-image: url('../../img/sprite-to.png');
+  background-image: url('../img/sprite-to.png');
   background-position: -226px -141px;
   width: 69px;
   height: 65px;
 }
 .to-service__item--parking-brake::before {
   top: -10px;
-  background-image: url('../../img/sprite-to.png');
+  background-image: url('../img/sprite-to.png');
   background-position: -209px -224px;
   width: 72px;
   height: 40px;
@@ -1314,21 +1314,21 @@ This must be run when you have at least 2 sprites.
   top: 0;
 }
 .to-service__item--oil::before {
-  background-image: url('../../img/sprite-to.png');
+  background-image: url('../img/sprite-to.png');
   background-position: -120px 0px;
   width: 104px;
   height: 101px;
   left: 72px;
 }
 .to-service__item--eco-filter::before {
-  background-image: url('../../img/sprite-to.png');
+  background-image: url('../img/sprite-to.png');
   background-position: 0px -118px;
   width: 96px;
   height: 104px;
   left: 60px;
 }
 .to-service__item--air-filter::before {
-  background-image: url('../../img/sprite-to.png');
+  background-image: url('../img/sprite-to.png');
   background-position: 0px 0px;
   width: 118px;
   height: 116px;
@@ -1485,21 +1485,21 @@ This must be run when you have at least 2 sprites.
 .to-test__item--no-up::before {
   top: 25px;
   left: 45px;
-  background-image: url('../../img/sprite-to.png');
+  background-image: url('../img/sprite-to.png');
   background-position: -226px -82px;
   width: 83px;
   height: 57px;
 }
 .to-test__item--middle-up::before {
   left: 43px;
-  background-image: url('../../img/sprite-to.png');
+  background-image: url('../img/sprite-to.png');
   background-position: -226px 0px;
   width: 84px;
   height: 80px;
 }
 .to-test__item--up::before {
   left: 34px;
-  background-image: url('../../img/sprite-to.png');
+  background-image: url('../img/sprite-to.png');
   background-position: -98px -118px;
   width: 100px;
   height: 83px;
@@ -1633,23 +1633,23 @@ This must be run when you have at least 2 sprites.
   margin: 0 15px;
 }
 .to-marks__item--honda {
-  background-image: url('../../img/sprite-marks.png');
+  background-image: url('../img/sprite-marks.png');
   background-position: -86px 0px;
 }
 .to-marks__item--ford {
-  background-image: url('../../img/sprite-marks.png');
+  background-image: url('../img/sprite-marks.png');
   background-position: 0px 0px;
 }
 .to-marks__item--mitsubishi {
-  background-image: url('../../img/sprite-marks.png');
+  background-image: url('../img/sprite-marks.png');
   background-position: -86px -86px;
 }
 .to-marks__item--huyndai {
-  background-image: url('../../img/sprite-marks.png');
+  background-image: url('../img/sprite-marks.png');
   background-position: 0px -86px;
 }
 .to-marks__item--suzuki {
-  background-image: url('../../img/sprite-marks.png');
+  background-image: url('../img/sprite-marks.png');
   background-position: -172px 0px;
 }
 .main-header {
